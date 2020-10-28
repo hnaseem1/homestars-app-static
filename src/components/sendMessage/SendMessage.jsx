@@ -11,7 +11,7 @@ const SendMessage = ({userId, channelId}) => {
     }
 
     const handleOnSubmit = async (e) => {
-        //e.preventDefault()
+        e.preventDefault()
         await postData(`${APIURL}/channels/${channelId}/channel_messages`, { message: message, user_id:  userId})
         setMessage("")
     }

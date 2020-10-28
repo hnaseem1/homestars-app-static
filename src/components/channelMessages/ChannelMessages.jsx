@@ -22,7 +22,7 @@ const ChannelMessage = ({userId, channelId}) => {
         return () => {
             unmounted = true;
         };
-    }, [])
+    }, [channelId])
     
     
     return (
