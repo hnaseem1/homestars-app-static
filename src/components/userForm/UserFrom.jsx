@@ -43,7 +43,7 @@ return (
     <div>
         <form>
             <label>Username</label>
-            <input className="user-input" value={userName} onChange={handleOnChange}/>
+            <input className="user-input" value={userName} onChange={(e) => { setUserName(e.target.value) }}/>
             <button type="submit" className="message-submit" onClick={handleSave}>
                 Create User
             </button>

@@ -9,7 +9,8 @@ function App() {
 
   const[channelId, setChannelId] = useState(1);
   const [userId, setUserId] = useState(1);
-
+  console.log(channelId)
+  console.log(userId)
   return (
     <div className="App">
       <ChannelForm setChannelId={setChannelId}/>
